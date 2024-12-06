@@ -90,12 +90,12 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     print(device)
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
-        token="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"
+        token="troll-việt-lam" # Go find yourself lol
         ).to(device)
     
     tokenizer = AutoTokenizer.from_pretrained(
         model_name,
-        token="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")
+        token="troll-việt-lam") # Go find yourself lol
     model.eval()
 
     ml_models["model"] = model
