@@ -41,6 +41,7 @@ INSTRUCTIONS = {
     },
 }
 
+
 class EmbInputData(BaseModel):
     query: str = ""
     key: str = ""
